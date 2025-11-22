@@ -90,7 +90,7 @@ namespace SystemIIS
             string appPoolName = application.ApplicationPoolName;
             ApplicationPool appPool = serverManager.ApplicationPools[appPoolName];
             //Recycling time
-            //appPool.Recycling.PeriodicRestart.Time = TimeSpan.FromMinutes(60*29);
+            appPool.Recycling.PeriodicRestart.Time = TimeSpan.FromMinutes(60*29);
 
             //idletime out
             appPool.ProcessModel.IdleTimeout = TimeSpan.FromMinutes(60 * 2);
