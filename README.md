@@ -8,3 +8,5 @@ By using this tool, you agree that:
 - It is your responsibility to ensure that your actions comply with all applicable laws and regulations.
 
 Use responsibly and only in controlled, authorized environments.
+
+More detail: https://dienuet.wordpress.com/2025/11/22/hello-i-am-potato/
